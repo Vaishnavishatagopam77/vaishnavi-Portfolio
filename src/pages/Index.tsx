@@ -49,7 +49,7 @@ const Index = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center">
-              <img src="https://i.postimg.cc/gJcXpPnD/Whats-App-Image-2025-05-12-at-13-56-20-b7d22bcf.jpg" alt="Vaishnavi Shatagopam" className="rounded-full w-64 h-62 border-8 border-white shadow-xl object-cover" />
+              <img alt="Vaishnavi Shatagopam" className="rounded-full w-64 h-64 border-8 border-white shadow-xl object-cover" src="https://i.postimg.cc/sgfKLgW2/Whats-App-Image-2025-05-12-at-13-56-20-6b05c312.jpg" />
             </div>
           </div>
         </div>
