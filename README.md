@@ -50,4 +50,18 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+# ScreenShorts 
+# Featured Projects Showcase
+A highlight of my key projects, including e-commerce development, machine learning applications, and game development, built with tools like React, Python, and Unity.
+![image](https://github.com/user-attachments/assets/740c79a8-f42a-4125-8d2a-6d1147ccd215)
+
+"Featured Projects Showcase"
+A highlight of my key projects, including e-commerce development, machine learning applications, and game development, built with tools like React, Python, and Unity.
+
+![image](https://github.com/user-attachments/assets/10f8ed08-dfa4-478f-a592-47bbf732538a)
+
+# "Contact and Availability Section"
+User-friendly contact form with integrated contact information and availability status for freelance work or collaborations.
+
+![image](https://github.com/user-attachments/assets/136c2b47-472e-49a9-a828-8b329b009f85)
 
