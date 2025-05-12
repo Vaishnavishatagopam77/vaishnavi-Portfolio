@@ -1,37 +1,29 @@
-
 import { Link } from 'react-router-dom';
 import { ArrowRight, Code, Briefcase } from 'lucide-react';
 import ProjectCard from '../components/ProjectCard';
 import ServiceCard from '../components/ServiceCard';
-
 const Index = () => {
   // Sample projects data
-  const featuredProjects = [
-    {
-      title: "E-commerce Project",
-      description: "A fully functional e-commerce website with modern design and smooth user experience.",
-      tags: ["Web Development", "UI/UX", "React"],
-      imageUrl: "https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      link: "/portfolio"
-    },
-    {
-      title: "Bank Churn Model",
-      description: "Machine learning model designed for customer retention analysis to predict customer behavior.",
-      tags: ["ML", "Python", "Data Analysis"],
-      imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      link: "/portfolio"
-    },
-    {
-      title: "Game Development",
-      description: "Interactive games showcasing creativity and technical proficiency in game development.",
-      tags: ["Game Dev", "C++", "Unity"],
-      imageUrl: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      link: "/portfolio"
-    }
-  ];
-
-  return (
-    <div>
+  const featuredProjects = [{
+    title: "E-commerce Project",
+    description: "A fully functional e-commerce website with modern design and smooth user experience.",
+    tags: ["Web Development", "UI/UX", "React"],
+    imageUrl: "https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    link: "/portfolio"
+  }, {
+    title: "Bank Churn Model",
+    description: "Machine learning model designed for customer retention analysis to predict customer behavior.",
+    tags: ["ML", "Python", "Data Analysis"],
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    link: "/portfolio"
+  }, {
+    title: "Game Development",
+    description: "Interactive games showcasing creativity and technical proficiency in game development.",
+    tags: ["Game Dev", "C++", "Unity"],
+    imageUrl: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    link: "/portfolio"
+  }];
+  return <div>
       {/* Hero Section */}
       <section className="min-h-[90vh] flex items-center bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto">
@@ -57,11 +49,7 @@ const Index = () => {
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center">
-              <img 
-                src="https://i.postimg.cc/gJcXpPnD/Whats-App-Image-2025-05-12-at-13-56-20-b7d22bcf.jpg"
-                alt="Vaishnavi Shatagopam" 
-                className="rounded-full w-64 h-64 object-cover border-8 border-white shadow-xl"
-              />
+              <img src="https://i.postimg.cc/gJcXpPnD/Whats-App-Image-2025-05-12-at-13-56-20-b7d22bcf.jpg" alt="Vaishnavi Shatagopam" className="rounded-full w-64 h-62 border-8 border-white shadow-xl object-cover" />
             </div>
           </div>
         </div>
@@ -95,16 +83,7 @@ const Index = () => {
             <div className="w-24 h-1 bg-portfolio-yellow mx-auto mt-4"></div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProjects.map((project, index) => (
-              <ProjectCard 
-                key={index} 
-                title={project.title} 
-                description={project.description}
-                tags={project.tags}
-                imageUrl={project.imageUrl}
-                link={project.link}
-              />
-            ))}
+            {featuredProjects.map((project, index) => <ProjectCard key={index} title={project.title} description={project.description} tags={project.tags} imageUrl={project.imageUrl} link={project.link} />)}
           </div>
           <div className="text-center mt-12">
             <Link to="/portfolio" className="btn-primary inline-flex items-center">
@@ -122,21 +101,9 @@ const Index = () => {
             <div className="w-24 h-1 bg-portfolio-yellow mx-auto mt-4"></div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            <ServiceCard 
-              title="Web Development" 
-              description="Creating modern, responsive websites that provide excellent user experience."
-              icon={<Code size={32} className="text-portfolio-yellow" />}
-            />
-            <ServiceCard 
-              title="Python & Machine Learning" 
-              description="Developing ML models and applications to solve complex problems."
-              icon={<Code size={32} className="text-portfolio-yellow" />}
-            />
-            <ServiceCard 
-              title="AI Solutions" 
-              description="Implementing artificial intelligence to create smart, innovative applications."
-              icon={<Briefcase size={32} className="text-portfolio-yellow" />}
-            />
+            <ServiceCard title="Web Development" description="Creating modern, responsive websites that provide excellent user experience." icon={<Code size={32} className="text-portfolio-yellow" />} />
+            <ServiceCard title="Python & Machine Learning" description="Developing ML models and applications to solve complex problems." icon={<Code size={32} className="text-portfolio-yellow" />} />
+            <ServiceCard title="AI Solutions" description="Implementing artificial intelligence to create smart, innovative applications." icon={<Briefcase size={32} className="text-portfolio-yellow" />} />
           </div>
           <div className="text-center mt-12">
             <Link to="/services" className="inline-flex items-center font-medium text-portfolio-yellow hover:underline">
@@ -159,8 +126,6 @@ const Index = () => {
           </Link>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
